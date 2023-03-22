@@ -16,8 +16,9 @@ const scores = [
 // 66ç
 // ==========================================
 
-
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score)
+}
 
 
 // ==========================================
@@ -32,8 +33,24 @@ const scores = [
 // D
 // ==========================================
 
-
-
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 100 && scores[i].score > 90) {
+        scores[i].grade = 'A'
+        console.log(scores[i].grade)
+    } else if (scores[i].score < 90 && scores[i].score > 80) {
+        scores[i].grade = 'B'
+        console.log(scores[i].grade)
+    } else if (scores[i].score < 80 && scores[i].score > 70) {
+        scores[i].grade = 'C'
+        console.log(scores[i].grade)
+    } else if (scores[i].score < 70 && scores[i].score > 60) {
+        scores[i].grade = 'D'
+        console.log(scores[i].grade)
+    } else {
+        scores[i].grade = 'F'
+        console.log(scores[i].grade)
+    }
+}
 
 
 // ==========================================
@@ -49,8 +66,7 @@ const scores = [
 //  ];
 // ==========================================
 
-
-
+console.log(scores)
 
 
 // ==========================================
@@ -67,7 +83,8 @@ const NOVIEmployees = [
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
-// console.log(NOVIEmployees) geeft: [
+// console.log(NOVIEmployees) geeft:
+// [
 //   { firstName: 'Nova', lastName: 'Eeken', email: 'Nova.Eeken@novi.nl' },
 //   { firstName: 'Sam', lastName: 'Barnhoorn', email: 'Sam.Barnhoorn@novi.nl' },
 //   { firstName: 'Tessa', lastName: 'Steur', email: 'Tessa.Steur@novi.nl' },
@@ -75,16 +92,21 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
-
-
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = NOVIEmployees[i].firstName + '.' + NOVIEmployees[i].lastName + '@novi.nl'
+    console.log(NOVIEmployees[i])
+}
+console.log(NOVIEmployees)
 
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = NOVIEmployees[i].email.toLowerCase()
+}
+console.log(NOVIEmployees)
 
 
 // ==========================================
@@ -131,5 +153,40 @@ const students = [
 // ]
 // ==========================================
 
+for (let i = 0; i < students.length; i++) {
+    switch (students[i].zipCode) {
+        case '3513':
+            // 	3513 = Pijlsweerd
+            students[i].neighborhood = 'Pijlsweerd'
+            break;
+        case '3514':
+            //  3514 = Vogelenbuurt
+            students[i].neighborhood = 'Vogelenbuurt'
+            break;
+        case '3512':
+            //  3512 = Binnenstad
+            students[i].neighborhood = 'Binnenstad'
+            break;
+        case '3531':
+            //  3531 = Lombok
+            students[i].neighborhood = 'Lombok'
+            break;
+        case '3572':
+            //  3572 = Wittevrouwen
+            students[i].neighborhood = 'Wittevrouwen'
+            break;
+        case '3581':
+            //  3581 = Oudwijk
+            students[i].neighborhood = 'Oudwijk'
+            break;
+        case '3583':
+            //  3583 = Schildersbuurt
+            students[i].neighborhood = 'Schildersbuurt'
+            break;
+        default:
+            students[i].neighborhood = 'Onbekend'
+    }
+}
 
+console.log(students)
 
