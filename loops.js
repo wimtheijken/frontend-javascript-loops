@@ -13,7 +13,7 @@
 
 const star = '*';
 for (let i = 0; i < 6; i++) {
-    console.log(`${star.repeat(i)}`);
+    console.log(`${star.repeat(i)}`)
 }
 
 
@@ -100,7 +100,6 @@ for (let i = 0; i < 9; i++) {
 // etc.
 // ==========================================
 
-console.log('test')
 for (let i = 0; i < 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('FizzBuzz')

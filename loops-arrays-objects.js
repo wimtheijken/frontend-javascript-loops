@@ -89,7 +89,8 @@ const NOVIEmployees = [
 //   { firstName: 'Sam', lastName: 'Barnhoorn', email: 'Sam.Barnhoorn@novi.nl' },
 //   { firstName: 'Tessa', lastName: 'Steur', email: 'Tessa.Steur@novi.nl' },
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
-//  ];
+//  ];git status
+
 // ==========================================
 
 for (let i = 0; i < NOVIEmployees.length; i++) {
