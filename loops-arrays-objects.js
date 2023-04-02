@@ -34,16 +34,16 @@ for (let i = 0; i < scores.length; i++) {
 // ==========================================
 
 for (let i = 0; i < scores.length; i++) {
-    if (scores[i].score < 100 && scores[i].score > 90) {
+    if (scores[i].score <= 100 && scores[i].score >= 90) {
         scores[i].grade = 'A'
         console.log(scores[i].grade)
-    } else if (scores[i].score < 90 && scores[i].score > 80) {
+    } else if (scores[i].score < 90 && scores[i].score >= 80) {
         scores[i].grade = 'B'
         console.log(scores[i].grade)
-    } else if (scores[i].score < 80 && scores[i].score > 70) {
+    } else if (scores[i].score < 80 && scores[i].score >= 70) {
         scores[i].grade = 'C'
         console.log(scores[i].grade)
-    } else if (scores[i].score < 70 && scores[i].score > 60) {
+    } else if (scores[i].score < 70 && scores[i].score >= 60) {
         scores[i].grade = 'D'
         console.log(scores[i].grade)
     } else {
@@ -89,14 +89,14 @@ const NOVIEmployees = [
 //   { firstName: 'Sam', lastName: 'Barnhoorn', email: 'Sam.Barnhoorn@novi.nl' },
 //   { firstName: 'Tessa', lastName: 'Steur', email: 'Tessa.Steur@novi.nl' },
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
-//  ];git status
+//  ];
 
 // ==========================================
 
 for (let i = 0; i < NOVIEmployees.length; i++) {
     NOVIEmployees[i].email = NOVIEmployees[i].firstName + '.' + NOVIEmployees[i].lastName + '@novi.nl'
-    console.log(NOVIEmployees[i])
 }
+
 console.log(NOVIEmployees)
 
 

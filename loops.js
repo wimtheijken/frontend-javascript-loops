@@ -11,11 +11,9 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
-const star = '*';
 for (let i = 0; i < 6; i++) {
-    console.log(`${star.repeat(i)}`)
+    console.log(`${'*'.repeat(i)}`)
 }
-
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
